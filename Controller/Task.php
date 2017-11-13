@@ -1,5 +1,6 @@
 <?php 
 namespace Banner\Controller;
+require '/../autoload.php';
 //При создании объекта класса Controler\Tasc автоматически создаётся объект класса Model\View  
 // и на созданном объекте вызываем  функцию display 
 
@@ -8,7 +9,7 @@ class Task
 	   
 	   public function __construct()
 	   {
-	   	$this->view = new \MVC\Model\View();
+	   	$this->view = new \Banner\Model\View();
 	   }
         
         public function action($action)
